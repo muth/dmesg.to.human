@@ -1,0 +1,7 @@
+If you're trying to diagnose a problem on a server and "dmesg" tells you 
+something interesting (e.g. oom-killer, nfs problems, eth problems) but you 
+want to know if the messages are recent or from weeks ago but it's hard to tell 
+at a glance because dmesg tells you when it happened with a number meaning
+"seconds since boot". This script reads the output of dmesg and prefixes each 
+line with a time like "2012-05-10 22:33:57 " which is the "seconds since boot" 
+added to the boot time.
