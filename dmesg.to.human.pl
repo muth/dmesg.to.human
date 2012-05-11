@@ -37,7 +37,7 @@ sub get_dt_boot {
     die "no /proc/uptime and uptime returned an unexpected format $uptime_str" unless $uptime_str =~
 	/^
 	    \s*
-	    (?<now_h>\d\d):(?<now_m>\d\d):(?<now_s>\d\d)
+	    \d\d:\d\d:\d\d # now as reported by uptime.. ignore it
 	    \s+up\s+
 	    (?:
 		(?:(?<n_days>\d+)\s+days,\s+)?(?<off_h>\d?\d):(?<off_m>\d\d)
