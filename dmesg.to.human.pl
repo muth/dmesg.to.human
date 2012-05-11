@@ -3,9 +3,9 @@
 # dmesg on modern kernels prefixes each line with the number of seconds since boot.
 # This script determines the boot time and turns the 'seconds' since boot to a (local) human time. 
 # So instead of seeing
-# [  649.701570] tun: Universal TUN/TAP device driver, 1.6
+# [60456.816070] Out of memory: kill process 1272 (foo) score 232078 or a child
 # you get
-# 2012-05-10 22:33:57 [  649.701570] tun: Universal TUN/TAP device driver, 1.6
+# 2012-05-11 05:30:24 [60456.816070] Out of memory: kill process 1272 (foo) score 232078 or a child
 
 use strict;
 use DateTime;
